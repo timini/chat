@@ -1,0 +1,11 @@
+{{#bs-modal title="Join us!" body=false footer=false}}
+{{#bs-modal-body}}
+{{#bs-form action="authenticate" model=this}}
+{{bs-form-element controlType="text" label="username" property="username"}}
+{{bs-form-element controlType="email" label="email" property="email"}}
+{{bs-form-element action="authenticate" controlType="password" label="password" property="password"}}
+{{/bs-form}}
+{{/bs-modal-body}}
+{{bs-modal-footer closeTitle="cancel" submitTitle="login"}}
+{{/bs-modal}}
+{{outlet}}
