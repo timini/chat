@@ -8,7 +8,7 @@ from chat import views as chat_views
 
 admin.autodiscover()
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', users_views.UserViewSet)
 router.register(r'groups', users_views.GroupViewSet)
 router.register(r'comments', chat_views.CommentViewSet)

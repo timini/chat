@@ -2,5 +2,5 @@ import OAuth2PasswordGrant from 'ember-simple-auth/authenticators/oauth2-passwor
 
 export default OAuth2PasswordGrant.extend({
   serverTokenEndpoint: '/oauth/token/',
-  clientId: 'nzN8xQBxEwqjHtR7Kq6220mvIVY6QHRGxUNY8UWa',
+  clientId: 'EReRvlymkeXgTXRf55HXRD1nZiQtcB9AizTwE0Ut',
 });

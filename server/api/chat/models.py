@@ -10,3 +10,6 @@ class DateMixin(models.Model):
 class Comment(DateMixin):
     text = models.CharField(max_length=255)
     user = models.ForeignKey(User)
+
+    class JSONAPIMeta:
+        resource_name = "comments"

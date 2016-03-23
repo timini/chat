@@ -10,3 +10,4 @@ class CommentViewSet(viewsets.ModelViewSet):
     """
     queryset = Comment.objects.all().order_by('-created_at')
     serializer_class = CommentSerializer
+    resource_name = 'comments'
