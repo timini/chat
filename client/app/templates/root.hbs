@@ -1,0 +1,12 @@
+{{outlet}}
+
+{{#each model as |comment|}}
+  <p>
+  {{comment.text}}
+  {{comment.createdAt}}
+  {{comment.updatedAt}}
+  {{comment.user.username}}
+  {{comment.user.email}}
+</p>
+{{/each}}
+{{bs-input}}
