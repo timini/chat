@@ -7,5 +7,7 @@
   {{comment.user.email}}
 </p>
 {{/each}}
-{{bs-input action="postComment" property='comment'}}
+{{#bs-form action="postComment" model=this}}
+{{bs-form-element action="postComment" property="comment"}}
+{{/bs-form}}
 {{outlet}}

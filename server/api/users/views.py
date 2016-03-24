@@ -1,7 +1,16 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
 from users.serializers import UserSerializer, GroupSerializer
 
+# Method the current user can use to find their user ID
+@api_view(['GET'])
+def current_user(request):
+    if request.user.is_authenticated():
+        return Response({'id': request.user.id,})
+    return Resonse({})
 
 class UserViewSet(viewsets.ModelViewSet):
     """
