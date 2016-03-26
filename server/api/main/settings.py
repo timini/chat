@@ -105,6 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'users.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
@@ -142,6 +143,9 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_METADATA_CLASS': 'rest_framework_json_api.metadata.JSONAPIMetadata',
 }
+
+JSON_API_FORMAT_RELATION_KEYS = 'dasherize'
+JSON_API_PLURALIZE_RELATION_TYPE = True
 
 OAUTH2_PROVIDER = {
     # this is the list of available scopes

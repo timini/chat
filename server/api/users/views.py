@@ -1,9 +1,9 @@
-from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from users.serializers import UserSerializer, GroupSerializer
+from .models import User
+from .serializers import UserSerializer
 
 # Method the current user can use to find their user ID
 @api_view(['GET'])
@@ -18,11 +18,4 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
-
-
-class GroupViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows groups to be viewed or edited.
-    """
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
+    resource_name = 'users'

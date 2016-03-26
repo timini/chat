@@ -10,7 +10,6 @@ admin.autodiscover()
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', users_views.UserViewSet)
-router.register(r'groups', users_views.GroupViewSet)
 router.register(r'comments', chat_views.CommentViewSet)
 
 # Wire up our API using automatic URL routing.
