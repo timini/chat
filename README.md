@@ -1,6 +1,6 @@
 # Example Ember and Django Rest Framework JSON-API project using Oauth2 Authentication.
 
-This is an example project stowing you how to getstarted with Django Rest Framwork and Ember.js.
+This is an example project stowing you how to get started with Django Rest Framwork and Ember.js.
 
 The components of this project are:
  - [Django Rest Framework](http://www.django-rest-framework.org/) API conforming to the [JSON-API specification](http://jsonapi.org/).
