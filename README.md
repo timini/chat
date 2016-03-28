@@ -1,4 +1,4 @@
-# chat
+# Example Ember and Django Rest Framework JSON-API project using Oauth2 Authentication.
 
 This is an example project stowing you how to getstarted with Django Rest Framwork and Ember.js.
 
